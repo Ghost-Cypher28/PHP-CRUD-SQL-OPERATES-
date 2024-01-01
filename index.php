@@ -34,10 +34,10 @@ include "db_conn.php";
     </div>';
     }
     ?>
-    <a href="add-new.php" class="btn btn-dark mb-3">Add New</a>
+    <a href="add-new.php" class="btn btn-success mb-3">Add New</a>
 
     <table class="table table-hover text-center">
-      <thead class="table-dark">
+      <thead style="background-color: #92C7CF;">
         <tr>
           <th scope="col">ID</th>
           <th scope="col">First Name</th>
@@ -60,8 +60,8 @@ include "db_conn.php";
             <td><?php echo $row["email"] ?></td>
             <td><?php echo $row["gender"] ?></td>
             <td>
-              <a href="edit.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
-              <a href="delete.php?id=<?php echo $row["id"] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
+              <a href="edit.php?id=<?php echo $row["id"] ?>" style="color: #29ADB2;"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+              <a href="delete.php?id=<?php echo $row["id"] ?>" style="color: #A25772;"><i class="fa-solid fa-trash fs-5"></i></a>
             </td>
           </tr>
         <?php
